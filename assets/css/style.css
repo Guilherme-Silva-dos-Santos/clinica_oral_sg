@@ -191,7 +191,7 @@ a {
   right: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: #FFFFFF;
+  background: rgba(247,245,242,.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition), box-shadow var(--transition);
@@ -260,7 +260,7 @@ a {
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: white;
+  background: none;
   border: none;
   cursor: pointer;
   padding: 4px;
@@ -784,7 +784,9 @@ a {
   .nav__links {
     position: fixed;
     inset: var(--nav-h) 0 0 0;
-    background: var(--clr-white);
+    background: #FFFFFF;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
