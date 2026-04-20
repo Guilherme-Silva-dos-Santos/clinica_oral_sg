@@ -783,10 +783,15 @@ a {
   /* Nav mobile */
   .nav__links {
     position: fixed;
-    inset: var(--nav-h) 0 0 0;
-    background: #FFFFFF;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    opacity: 1 !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -795,6 +800,7 @@ a {
     transform: translateX(100%);
     transition: transform var(--transition);
     z-index: 99;
+    isolation: isolate;
   }
 
   .nav__links.open {
