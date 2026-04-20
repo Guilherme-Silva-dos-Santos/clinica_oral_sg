@@ -1,0 +1,32 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+ <rect width="100%" height="100%" fill="white"></rect>
+  <style>
+    .primary { stroke: #4FC3B4; fill: none; stroke-width: 4; }
+    .text-main { font-family: Arial, sans-serif; fill: #333; font-size: 28px; }
+    .text-highlight { fill: #4FC3B4; font-weight: bold; }
+    .line { stroke: #4FC3B4; stroke-width: 2; }
+  </style>
+
+  <!-- Ícone do dente -->
+  <path class="primary" d="
+    M200 40
+    C170 20, 130 30, 130 80
+    C130 120, 150 150, 170 150
+    C185 150, 185 120, 200 120
+    C215 120, 215 150, 230 150
+    C250 150, 270 120, 270 80
+    C270 30, 230 20, 200 40
+    Z"></path>
+
+  <!-- Sorriso -->
+  <path d="M180 85 Q200 95 220 85" stroke="#4FC3B4" stroke-width="3" fill="none"></path>
+
+  <!-- Linhas laterais -->
+  <line x1="50" y1="170" x2="120" y2="170" class="line"></line>
+  <line x1="325" y1="170" x2="390" y2="170" class="line"></line>
+
+  <!-- Texto -->
+  <text x="125" y="180" class="text-main">
+    Clinica <tspan class="text-highlight">Oral</tspan> SG
+  </text>
+</svg>
