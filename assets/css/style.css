@@ -191,8 +191,7 @@ a {
   right: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(247,245,242,.92);
-  backdrop-filter: blur(12px);
+  background: #FFFFFF;
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -787,11 +786,9 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #FFFFFF !important;
-    background-image: none !important;
+    background: #FFFFFF !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
-    opacity: 1 !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -800,7 +797,6 @@ a {
     transform: translateX(100%);
     transition: transform var(--transition);
     z-index: 99;
-    isolation: isolate;
   }
 
   .nav__links.open {
